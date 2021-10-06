@@ -37,7 +37,7 @@ const ChartPreview = ({
     if (requiredVariables.length > 0) {
       let errorMessage = (
         <span>
-          Required chart variables: you need to map{' '}
+          チャート変数が必要です。{' '} のマッピングをしてください。
           {requiredVariables
             .map((d, i) => <span key={i} className="font-weight-bold">{d.name}</span>)
             .reduce((prev, curr) => [prev, ' and ', curr])}

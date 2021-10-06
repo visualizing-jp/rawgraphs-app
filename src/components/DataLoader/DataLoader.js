@@ -62,7 +62,7 @@ function DataLoader({
   const options = [
     {
       id: 'paste',
-      name: 'Paste your data',
+      name: 'データを貼り付ける',
       loader: (
         <Paste
           userInput={userInput}
@@ -71,13 +71,13 @@ function DataLoader({
         />
       ),
       message:
-        'Copy and paste your data from other applications or websites. You can use tabular (TSV, CSV, DSV) or JSON data.',
+        'ほかのアプリやウェブサイトからデータをコピペします。表データ(TSV, CSV, DSV)かJSON形式が利用可能です。',
       icon: BsClipboard,
       allowedForReplace: true,
     },
     {
       id: 'upload',
-      name: 'Upload your data',
+      name: 'データをアップロードする',
       loader: (
         <UploadFile
           userInput={userInput}
@@ -85,13 +85,13 @@ function DataLoader({
           setLoadingError={setLoadingError}
         />
       ),
-      message: 'You can load tabular (TSV, CSV, DSV) or JSON data.',
+      message: '表データ(TSV, CSV, DSV)かJSONをアップロードできます',
       icon: BsUpload,
       allowedForReplace: true,
     },
     {
       id: 'samples',
-      name: 'Try our data samples',
+      name: 'サンプルデータを使ってみる',
       message: '',
       loader: (
         <DataSamples
@@ -105,7 +105,7 @@ function DataLoader({
     {
       id: 'sparql',
       name: 'SPARQL query',
-      message: 'Load data with a SparQL query',
+      message: 'SparQLクエリとしてデータを読み込む',
       loader: (
         <SparqlFetch
           userInput={userInput}
@@ -121,7 +121,7 @@ function DataLoader({
       id: 'url',
       name: 'From URL',
       message:
-        'Enter a web address (URL) pointing to the data (e.g. a public Dropbox file, a public API, ...). Please, be sure the server is CORS-enabled.',
+        'データを示すURLから読み込む(例：Dropboxのリンクや、公開されているAPI、など)。CORSが有効になっていれば利用可能です。',
       loader: (
         <UrlFetch
           userInput={userInput}
@@ -135,8 +135,8 @@ function DataLoader({
     },
     {
       id: 'project',
-      name: 'Open your project',
-      message: 'Load a .rawgraphs project.',
+      name: 'プロジェクトを開く',
+      message: '.rawgraphsプロジェクトファイルを読み込む.',
       loader: (
         <LoadProject
           onProjectSelected={hydrateFromProject}
@@ -331,7 +331,7 @@ function DataLoader({
               onClick={reloadRAW}
             >
               <BsArrowRepeat className="mr-2" />
-              <h4 className="m-0 d-inline-block">{'Reset'}</h4>
+              <h4 className="m-0 d-inline-block">{'リセット'}</h4>
             </div>
 
             <div
@@ -342,7 +342,7 @@ function DataLoader({
               }}
             >
               <BsArrowCounterclockwise className="mr-2" />
-              <h4 className="m-0 d-inline-block">{'Change data'}</h4>
+              <h4 className="m-0 d-inline-block">{'データを変更する'}</h4>
             </div>
           </Col>
         )}
@@ -361,8 +361,7 @@ function DataLoader({
                       </span>{' '}
                       (
                       {data.dataset.length * Object.keys(data.dataTypes).length}{' '}
-                      cells) have been successfully parsed, now you can choose a
-                      chart!
+                      cells) のデータが上手く取り込めました。それではチャートを選んでいきましょう！
                     </span>
                   }
                 />
