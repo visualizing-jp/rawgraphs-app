@@ -95,21 +95,21 @@ export const separatorsList = Object.keys(separatorsLabels)
 export const DefaultSeparator = ","
 
 export const AGGREGATIONS_LABELS = {
-  "count": "Count",
-  "mean": "Average",
-  "median": "Median",
-  "max": "Max",
-  "min": "Min",
-  "countDistinct": "Count unique",
-  "sum": "Sum",
+  "count": "数（Count）",
+  "mean": "平均値（Average）",
+  "median": "中央値（Median）",
+  "max": "最大値（Max）",
+  "min": "最小値（Min）",
+  "countDistinct": "ユニーク値をカウント（Count unique）",
+  "sum": "合計（Sum）",
   "csv": "CSV",
   "csvDistinct": "CSV (unique)",
 }
 
 export const SCALES_LABELS = {
-  "sequential": "Sequential",
-  "diverging": "Diverging",
-  "ordinal": "Ordinal"
+  "sequential": "定量的（Sequential）",
+  "diverging": "分岐的（Diverging）",
+  "ordinal": "定性的（Ordinal）"
 }
 
 export const COLOR_SCHEMES_LABELS = {

@@ -272,13 +272,13 @@ const ChartDimensionCard = ({
             })}
             ref={drop}
           >
-            {!dimension.multiple && 'Drop dimension here'}
+            {!dimension.multiple && 'ディメンションをここへドロップしてください'}
             {dimension.multiple &&
               columnsMappedHere.length === 0 &&
-              'Drop dimensions here'}
+              'ディメンションをここへドロップしてください'}
             {dimension.multiple &&
               columnsMappedHere.length > 0 &&
-              'Drop another dimension here'}
+              '別のディメンションをここへドロップしてください'}
           </div>
         )}
       </div>

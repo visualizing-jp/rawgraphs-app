@@ -179,7 +179,7 @@ function DataMapping({ dataTypes, dimensions, mapping, setMapping }, ref) {
     <DndProvider backend={HTML5Backend}>
       <Row>
         <Col xs={3}>
-          <h5 className="text-uppercase">Dimensions</h5>
+          <h5 className="text-uppercase">ディメンション</h5>
           {map(dataTypes, (dataType, columnName) => {
             return (
               <ColumnCard
@@ -193,7 +193,7 @@ function DataMapping({ dataTypes, dimensions, mapping, setMapping }, ref) {
           })}
         </Col>
         <Col>
-          <h5 className="text-uppercase">Chart Variables</h5>
+          <h5 className="text-uppercase">チャート変数</h5>
           <Row
             className="sticky-top"
             style={{ top: 'calc(var(--header-height) + 16px)' }}
