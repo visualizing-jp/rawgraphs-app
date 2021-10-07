@@ -81,7 +81,7 @@ export default function SparqlFetch({
   return (
     <>
       <div className={classNames(S['base-iri-input-here'])}>
-        <span>Write your base IRI here</span>
+        <span>ベースIRIをここに書いてください</span>
       </div>
       <input
         className={classNames('w-100', S['url-input'])}
@@ -91,7 +91,7 @@ export default function SparqlFetch({
         }}
       />
       <div className={classNames(S['query-input-here'])}>
-        <span>Write your query here</span>
+        <span>クエリをここに書いてください</span>
       </div>
       <div ref={editorDomRef} />
       <div className="text-right">
@@ -100,7 +100,7 @@ export default function SparqlFetch({
           disabled={!parsedQuery || !url}
           onClick={onSubmit}
         >
-          Run query
+          クエリを実行する
         </button>
       </div>
     </>

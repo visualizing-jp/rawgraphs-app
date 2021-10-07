@@ -104,7 +104,7 @@ function DataLoader({
     },
     {
       id: 'sparql',
-      name: 'SPARQL query',
+      name: 'SPARQLクエリ',
       message: 'SparQLクエリとしてデータを読み込む',
       loader: (
         <SparqlFetch
@@ -119,9 +119,9 @@ function DataLoader({
     },
     {
       id: 'url',
-      name: 'From URL',
+      name: 'URLから',
       message:
-        'データを示すURLから読み込む(例：Dropboxのリンクや、公開されているAPI、など)。CORSが有効になっていれば利用可能です。',
+        'データを示すURLから読み込む(例：Dropboxのリンクや、公開されているAPIなど)。CORSが有効になっていれば利用可能です。',
       loader: (
         <UrlFetch
           userInput={userInput}
@@ -357,11 +357,11 @@ function DataLoader({
                   message={
                     <span>
                       <span className="font-weight-bold">
-                        {data.dataset.length} rows
+                        {data.dataset.length} 行
                       </span>{' '}
                       (
                       {data.dataset.length * Object.keys(data.dataTypes).length}{' '}
-                      cells) のデータが上手く取り込めました。それではチャートを選んでいきましょう！
+                      セル) のデータが上手く取り込めました。それではチャートを選んでいきましょう！
                     </span>
                   }
                 />

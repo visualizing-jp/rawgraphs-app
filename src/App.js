@@ -211,7 +211,7 @@ function App() {
         <Footer />
         <CookieConsent
           location="bottom"
-          buttonText="Got it!"
+          buttonText="了解しました"
           style={{ background: '#f5f5f5', color: '#646467' }}
           buttonStyle={{
             background: '#646467',
@@ -223,8 +223,7 @@ function App() {
           buttonClasses="btn btn-default btn-grey"
           acceptOnScroll={true}
         >
-          This website uses Google Analytics to anonymously collect browsing
-          data.{' '}
+          本サイトでは、Google Analyticsを使用して閲覧データを匿名で収集しています。{' '}
           <a
             href="https://rawgraphs.io/privacy/"
             target="_blank"

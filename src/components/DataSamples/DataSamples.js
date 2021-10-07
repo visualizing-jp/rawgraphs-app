@@ -4,7 +4,7 @@ import styles from './DataSamples.module.scss'
 
 const samplesList = [
   {
-    name: 'Hate crimes in New York',
+    name: 'ニューヨークでのヘイト犯罪',
     category: 'Alluvial Diagram',
     url: './sample-datasets/Alluvial diagram - Hate crimes in New York.tsv',
     delimiter: '\t',
@@ -13,7 +13,7 @@ const samplesList = [
       'https://data.cityofnewyork.us/Public-Safety/NYPD-Hate-Crimes/bqiq-cu78',
   },
   {
-    name: 'Lannister vs Starck relationships',
+    name: 'ラニスター対スタルクの関係',
     category: 'Arc diagrams',
     url:
       './sample-datasets/Arc diagrams - Lannister vs Starck relationships.tsv',
@@ -22,7 +22,7 @@ const samplesList = [
     sourceURL: 'https://www.kaggle.com/theobreid/got-data',
   },
   {
-    name: 'EU Index of consumer prices',
+    name: 'EU 消費者物価指数',
     category: 'Horizon Graph',
     url: './sample-datasets/Horizon Graph - EU Index of consumer prices.tsv',
     delimiter: '\t',
@@ -32,7 +32,7 @@ const samplesList = [
   },
 
   {
-    name: 'New York mean wage per occupation',
+    name: 'ニューヨークの職業別平均賃金',
     category: 'Beeswarm plot',
     url: './sample-datasets/Beeswarm plot - NY mean wages.tsv',
     delimiter: '\t',
@@ -42,7 +42,7 @@ const samplesList = [
   },
 
   {
-    name: 'Temperature in Paris during the World War II',
+    name: '第二次世界大戦中のパリの気温',
     category: 'Contour plot',
     url:
       './sample-datasets/Contour plot - Mean temperature in Paris 1944-1945.tsv',
@@ -53,7 +53,7 @@ const samplesList = [
   },
 
   {
-    name: 'Highest grossing movies in history',
+    name: '史上最高の興行収入を記録した映画',
     category: 'Bubble chart',
     url: './sample-datasets/Bubble Chart - TOP 50 Groossing Movies.tsv',
     delimiter: '\t',
@@ -63,7 +63,7 @@ const samplesList = [
   },
 
   {
-    name: 'Foreign residents in Milan',
+    name: 'ミラノに住む外国人',
     category: 'Bumpchart',
     url: './sample-datasets/Bump chart - Foreign residents in Milan.tsv',
     delimiter: '\t',
@@ -73,7 +73,7 @@ const samplesList = [
   },
 
   {
-    name: 'Most populated cities per continent',
+    name: '大陸ごとの最も人口の多い都市',
     category: 'Circle packing',
     url: './sample-datasets/Circle Packing - Most populated cities.tsv',
     delimiter: '\t',
@@ -83,7 +83,7 @@ const samplesList = [
   },
 
   {
-    name: 'Kobe Bryant shoots',
+    name: 'コービー・ブライアントのシュート',
     category: 'Hexagonal Binning, Voronoi diagram',
     url: './sample-datasets/Hexbin - basketball shots.tsv',
     delimiter: '\t',
@@ -92,7 +92,7 @@ const samplesList = [
   },
 
   {
-    name: 'Orchestras by musical instrument',
+    name: '楽器別オーケストレーション',
     category: 'Treemap',
     url: './sample-datasets/Treemap - Orchestra.tsv',
     delimiter: '\t',
@@ -102,7 +102,7 @@ const samplesList = [
   },
 
   {
-    name: 'Italians PMs and Presidents',
+    name: 'イタリアの首相と大統領',
     category: 'Gantt chart',
     url: './sample-datasets/Gantt chart - Italian PMs and presidents.tsv',
     delimiter: '\t',
@@ -112,7 +112,7 @@ const samplesList = [
   },
 
   {
-    name: 'Revenues per Music format',
+    name: '音楽フォーマットごとの収益',
     category: 'Line chart',
     url: './sample-datasets/Line chart - RIAA Music format revenues.tsv',
     delimiter: '\t',
@@ -121,7 +121,7 @@ const samplesList = [
   },
 
   {
-    name: 'Energy flows in UK (2050)',
+    name: '英国のエネルギーフロー（2050年）',
     category: 'Sankey diagram',
     url: './sample-datasets/Sankey diagram - Energy flows.tsv',
     delimiter: '\t',
@@ -131,7 +131,7 @@ const samplesList = [
   },
 
   {
-    name: 'Aromas of wine and frequency',
+    name: 'ワインの香りと周波数',
     category: 'Sunburst Diagram',
     url: './sample-datasets/Sunburst - Wine Aromas.tsv',
     delimiter: '\t',
@@ -140,7 +140,7 @@ const samplesList = [
   },
 
   {
-    name: 'Happiness index',
+    name: '幸福度指数',
     category: 'Multiset Barchart',
     url: './sample-datasets/Multiset Barchart - Happiness Index.tsv',
     delimiter: '\t',
@@ -149,7 +149,7 @@ const samplesList = [
   },
 
   {
-    name: 'GDP sector composition',
+    name: 'GDPの部門別構成',
     category: 'Stacked barchart',
     url: './sample-datasets/Stacked barchart - GDP sector composition.tsv',
     delimiter: '\t',
@@ -159,7 +159,7 @@ const samplesList = [
   },
 
   {
-    name: 'Felidae classification (cats and friends)',
+    name: 'ネコ科の分類（ネコとその仲間たち）',
     category: 'Dendrogram, Circular dendrogram',
     url: './sample-datasets/Dendrogram - Felidae classification.tsv',
     delimiter: '\t',
@@ -168,7 +168,7 @@ const samplesList = [
   },
 
   {
-    name: 'Iris flowers',
+    name: 'アヤメの花',
     category: 'Convex hull, Parallel Coordinates',
     url: './sample-datasets/Convex hull - Iris flowers.tsv',
     delimiter: '\t',
@@ -177,7 +177,7 @@ const samplesList = [
   },
 
   {
-    name: 'Letter Frequency by Language',
+    name: '言語別の文字の頻度',
     category: 'Matrix plot (Heatmap)',
     url: './sample-datasets/Matrix Plot - Letters frequencies by language.tsv',
     delimiter: '\t',
@@ -186,7 +186,7 @@ const samplesList = [
   },
 
   {
-    name: 'FIFA players statistics',
+    name: 'FIFA選手統計',
     category: 'Radar Chart',
     url: './sample-datasets/Radar Chart - Fifa players.tsv',
     delimiter: '\t',
@@ -195,7 +195,7 @@ const samplesList = [
   },
 
   {
-    name: 'Olympics Medals',
+    name: 'オリンピック メダル',
     category: 'Streamgraph',
     url: './sample-datasets/Streamgraph - Olympics Medals.tsv',
     delimiter: '\t',
@@ -204,7 +204,7 @@ const samplesList = [
   },
 
   {
-    name: 'Weather in New York, 2012-2015',
+    name: 'ニューヨークの天気（2012-2015年）',
     category: 'Violin plot, Boxplot',
     url: './sample-datasets/Violin plot - Weather in New York.tsv',
     delimiter: '\t',
@@ -214,7 +214,7 @@ const samplesList = [
   },
 
   {
-    name: 'Netflix Original Series 2013/2017',
+    name: 'Netflixオリジナルシリーズ2013/2017年',
     category: 'Bar chart',
     url: './sample-datasets/Bar chart - Netflix Original Series.tsv',
     delimiter: '\t',
