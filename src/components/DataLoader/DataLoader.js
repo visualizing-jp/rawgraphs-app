@@ -200,30 +200,29 @@ function DataLoader({
     const column = Object.keys(errors[0].error)[0]
     return (
       <span>
-        Ops, please check <span className="font-weight-bold">row {row}</span> at
-        column <span className="font-weight-bold">{column}</span>.{' '}
+        おっと、<span className="font-weight-bold">{column} 列</span>の<span className="font-weight-bold">{row} 行</span>をチェックしてみてください.{' '}
         {errors.length === 2 && (
           <>
             {' '}
-            There's another issue at row{' '}
-            <span className="font-weight-bold">{errors[1].row + 1}</span>.{' '}
+            {' '}
+            <span className="font-weight-bold">{errors[1].row + 1}</span>行に別なイシューがあります。{' '}
           </>
         )}
         {errors.length > 2 && (
           <>
             {' '}
-            There are issues in{' '}
-            <span className="font-weight-bold">{errors.length - 1}</span> more
-            rows.{' '}
+            {' '}
+            <span className="font-weight-bold">{errors.length - 1}</span> 行、イシューがあります。
+            {' '}
           </>
         )}
         {successRows > 0 && (
           <>
-            The remaining{' '}
+            残りの{' '}
             <span className="font-weight-bold">
-              {successRows} row{successRows > 1 && <>s</>}
+              {successRows} 行{successRows > 1 && <>s</>}
             </span>{' '}
-            look{successRows === 1 && <>s</>} fine.
+            {successRows === 1 && <>s</>} は良さげです。
           </>
         )}
       </span>

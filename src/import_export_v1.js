@@ -73,20 +73,20 @@ export function serializeProject(
 function getOrError(object, path) {
   if (!has(object, path)) {
     console.log("IMPORT ERROR", object, path)
-    throw new Error("Selected project is not valid")
+    throw new Error("選択したプロジェクトは無効です。")
   }
   return get(object, path)
 }
 
 export function deserializeProject(project) {
   if (project.version !== "1") {
-    throw new Error("Invalid version number, please use a suitable deserializer")
+    throw new Error("無効なバージョン番号です。適切なデシリアライザを使用してください。")
   }
 
   const chartName = getOrError(project, "chart")
   const chart = charts.find(c => c.metadata.name === chartName)
   if (!chart) {
-    throw new Error("Unknown chart!")
+    throw new Error("未知のチャートです。")
   }
 
   return {
