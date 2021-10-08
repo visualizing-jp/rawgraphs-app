@@ -32,24 +32,24 @@ export default function ParsingOptions(props) {
   return (
     <Row>
       <Col className={styles.parsingOptions}>
-        <b>DATA PARSING OPTIONS</b>
+        <b>データの解釈・オプション</b>
 
         {props.userDataType === 'csv' && (
           <SeparatorSelector
-            title="Column separator"
+            title="ファイル形式としての区切り記号"
             value={props.separator}
             onChange={(nextSeparator) => props.setSeparator(nextSeparator)}
           />
         )}
         <ThousandsSeparatorSelector
-          title="Thousands separator"
+          title="3桁ごとの区切り記号"
           value={props.thousandsSeparator}
           onChange={(nextSeparator) =>
             props.setThousandsSeparator(nextSeparator)
           }
         />
         <DecimalsSeparatorSelector
-          title="Decimals separator"
+          title="小数点以下の区切り記号"
           value={props.decimalsSeparator}
           onChange={(nextSeparator) =>
             props.setDecimalsSeparator(nextSeparator)
@@ -57,7 +57,7 @@ export default function ParsingOptions(props) {
         />
 
         <DateLocaleSelector
-          title="Date Locale"
+          title="日付時刻のロケール"
           value={props.locale}
           onChange={(nextLocale) => props.setLocale(nextLocale)}
         />
@@ -75,10 +75,10 @@ export default function ParsingOptions(props) {
 
         <div className="divider mb-3 mt-0" />
 
-        <b>DATA TRANSFORMATION</b>
+        <b>データの変換</b>
 
         <StackSelector
-          title="Stack on"
+          title="スタック"
           value={props.stackDimension}
           list={props.dimensions}
           onChange={(nextStackDimension) =>
