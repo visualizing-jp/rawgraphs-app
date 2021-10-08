@@ -37,10 +37,10 @@ const ChartPreview = ({
     if (requiredVariables.length > 0) {
       let errorMessage = (
         <span>
-          チャート変数が必要です。{' '} のマッピングをしてください。
+          チャート変数が必要です。{' '}
           {requiredVariables
             .map((d, i) => <span key={i} className="font-weight-bold">{d.name}</span>)
-            .reduce((prev, curr) => [prev, ' and ', curr])}
+            .reduce((prev, curr) => [prev, ' and ', curr])} のマッピングをしてください。
         </span>
       )
       setError({ variant: 'secondary', message: errorMessage })

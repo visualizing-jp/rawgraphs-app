@@ -32,7 +32,7 @@ export default function ParsingOptions(props) {
   return (
     <Row>
       <Col className={styles.parsingOptions}>
-        <b>データの解釈・オプション</b>
+        <b>データの解釈</b>
 
         {props.userDataType === 'csv' && (
           <SeparatorSelector
