@@ -1,4 +1,5 @@
 import {
+  alluvialdiagram,
   arcdiagram,
   barchart,
   barchartmultiset,
@@ -27,10 +28,6 @@ import {
   violinplot,
   voronoidiagram,
 } from '@rawgraphs/rawgraphs-charts'
-
-import {
-  alluvialdiagram,
-} from '@visualizing-jp/rawgraphs-charts'
 
 // New charts, not included into first release.
 // Comment at necessity.
