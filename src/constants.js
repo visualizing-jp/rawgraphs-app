@@ -127,9 +127,9 @@ export const COLOR_SCHEMES_LABELS = {
 export const CHART_CATEGORY_LABELS = {
   "correlations": "相関",
   "distributions": "分布", 
-  "hierarchies": "階層",
+  "hierarchies": "ツリー",
   "networks": "ネットワーク",
   "proportions": "比率",
   "time series": "時系列",
-  "Dispersions": "散布"
+  "Dispersions": "空間的分布"
 }
