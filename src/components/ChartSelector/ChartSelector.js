@@ -37,7 +37,7 @@ function ChartSelector({ availableCharts, currentChart, setCurrentChart }) {
           絞り込む
           <Dropdown className="d-inline-block ml-2 raw-dropdown">
             <Dropdown.Toggle variant="white" className="pr-5">
-              {filter}
+              {CHART_CATEGORY_LABELS[filter] || filter}
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item
