@@ -62,4 +62,24 @@ let charts = [
   voronoidiagram,
 ]
 
+// 日本語説明文の翻訳
+const chartDescriptions = {
+  'rawgraphs.alluvialdiagram': 'カテゴリカル次元間の相関関係をフローとして表示し、共有アイテムを持つカテゴリを視覚的にリンクします。'
+}
+
+// チャートの説明文のみを日本語に上書き（名前は変更しない）
+charts = charts.map(chart => {
+  const description = chartDescriptions[chart.metadata.id]
+  if (description) {
+    return {
+      ...chart,
+      metadata: {
+        ...chart.metadata,
+        description: description
+      }
+    }
+  }
+  return chart
+})
+
 export default charts
