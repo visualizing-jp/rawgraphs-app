@@ -164,7 +164,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header menuItems={HeaderItems} />
+      {/* <Header menuItems={HeaderItems} /> */}
       <div className="app-sections">
         <Section title={`1. データを読み込む`} loading={loading}>
           <DataLoader {...dataLoader} hydrateFromProject={importProject} />
