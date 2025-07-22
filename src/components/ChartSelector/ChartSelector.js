@@ -3,16 +3,17 @@ import classNames from 'classnames'
 import { Row, Col, Card, Dropdown } from 'react-bootstrap'
 import { BsLink } from 'react-icons/bs'
 import uniq from 'lodash/uniq'
+import { CHART_CATEGORY_LABELS } from '../../constants'
 import styles from './ChartSelector.module.scss'
 
 function filterCharts(charts, filter) {
-  return filter === 'All charts'
+  return filter === '全てのチャート'
     ? charts
     : charts.filter((d) => d.metadata.categories.indexOf(filter) !== -1)
 }
 
 function ChartSelector({ availableCharts, currentChart, setCurrentChart }) {
-  const [filter, setFilter] = useState('All charts')
+  const [filter, setFilter] = useState('全てのチャート')
 
   const charts = useMemo(() => {
     return filterCharts(availableCharts, filter)
@@ -36,21 +37,21 @@ function ChartSelector({ availableCharts, currentChart, setCurrentChart }) {
           絞り込む
           <Dropdown className="d-inline-block ml-2 raw-dropdown">
             <Dropdown.Toggle variant="white" className="pr-5">
-              {filter.charAt(0).toUpperCase() + filter.slice(1)}
+              {filter}
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item
-                key={'All charts'}
-                onClick={() => handleFilterChange('All charts')}
+                key={'全てのチャート'}
+                onClick={() => handleFilterChange('全てのチャート')}
               >
-                All charts
+                全てのチャート
               </Dropdown.Item>
               {uniq(
                 availableCharts.map((d) => d.metadata.categories).flat()
               ).map((d) => {
                 return (
                   <Dropdown.Item key={d} onClick={() => handleFilterChange(d)}>
-                    {d.charAt(0).toUpperCase() + d.slice(1)}
+                    {CHART_CATEGORY_LABELS[d] || d.charAt(0).toUpperCase() + d.slice(1)}
                   </Dropdown.Item>
                 )
               })}
@@ -121,10 +122,8 @@ function ChartSelector({ availableCharts, currentChart, setCurrentChart }) {
                       <Card.Subtitle className="m-0">
                         <h4 className="m-0">
                           {d.metadata.categories
-                            .join(', ')
-                            .charAt(0)
-                            .toUpperCase() +
-                            d.metadata.categories.join(', ').slice(1)}
+                            .map((cat) => CHART_CATEGORY_LABELS[cat] || cat.charAt(0).toUpperCase() + cat.slice(1))
+                            .join(', ')}
                         </h4>
                       </Card.Subtitle>
                     </Card.Body>

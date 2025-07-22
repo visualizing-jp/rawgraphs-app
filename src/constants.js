@@ -123,3 +123,13 @@ export const COLOR_SCHEMES_LABELS = {
   "interpolateTurbo": "Turbo discrete",
   "interpolateSpectral": "Spectral discrete"
 }
+
+export const CHART_CATEGORY_LABELS = {
+  "correlations": "相関",
+  "distributions": "分布", 
+  "hierarchies": "階層",
+  "networks": "ネットワーク",
+  "proportions": "比率",
+  "time series": "時系列",
+  "Dispersions": "散布"
+}
