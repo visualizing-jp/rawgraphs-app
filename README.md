@@ -1,3 +1,13 @@
+## ビルド方法
+
+```
+ yarn build
+```
+
+## デプロイ
+
+Netlifyへデプロイされます。設定済み。
+
 ## About
 
 **RAWGraphs** is an open web tool to create custom vector-based visualizations on top of the amazing [d3.js](https://github.com/mbostock/d3) library.
