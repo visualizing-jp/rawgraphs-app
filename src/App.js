@@ -4,8 +4,8 @@ import {
   getDefaultOptionsValues,
 } from '@rawgraphs/rawgraphs-core'
 
-import HeaderItems from './HeaderItems'
-import Header from './components/Header'
+// import HeaderItems from './HeaderItems'
+// import Header from './components/Header'
 import Section from './components/Section'
 import Footer from './components/Footer'
 import ScreenSizeAlert from './components/ScreenSizeAlert'
@@ -164,7 +164,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header menuItems={HeaderItems} />
+      {/* <Header menuItems={HeaderItems} /> */}
       <div className="app-sections">
         <Section title={`1. データを読み込む`} loading={loading}>
           <DataLoader {...dataLoader} hydrateFromProject={importProject} />
